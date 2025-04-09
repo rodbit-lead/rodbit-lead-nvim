@@ -18,5 +18,6 @@ return {
     keymap.set("i", "<C-x>", function()
       return vim.fn["codeium#Clear"]()
     end, { expr = true, silent = true, desc = "Clear AI suggestions" })
+    keymap.set("n", "<leader>ai", ":CodeiumToggle<CR>", { silent = true, desc = "Toggle AI On/Off" })
   end,
 }
